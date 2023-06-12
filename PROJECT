@@ -76,4 +76,37 @@ resources:
   webhooks:
     validation: true
     webhookVersion: v1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: openshift.io
+  group: replication.storage
+  kind: VolumeGroupReplication
+  path: github.com/csi-addons/kubernetes-csi-addons/apis/replication.storage/v1alpha1
+  version: v1alpha1
+  webhooks:
+    validation: true
+    webhookVersion: v1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: openshift.io
+  group: replication.storage
+  kind: VolumeGroupReplicationContent
+  path: github.com/csi-addons/kubernetes-csi-addons/apis/replication.storage/v1alpha1
+  version: v1alpha1
+  webhooks:
+    validation: true
+    webhookVersion: v1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: openshift.io
+  group: replication.storage
+  kind: VolumeGroupReplicationClass
+  path: github.com/csi-addons/kubernetes-csi-addons/apis/replication.storage/v1alpha1
+  version: v1alpha1
+  webhooks:
+    validation: true
+    webhookVersion: v1
 version: "3"

@@ -40,20 +40,6 @@ const (
 	Resync ReplicationState = "resync"
 )
 
-// State captures the latest state of the replication operation.
-type State string
-
-const (
-	// PrimaryState represents the Primary replication state.
-	PrimaryState State = "Primary"
-
-	// SecondaryState represents the Secondary replication state.
-	SecondaryState State = "Secondary"
-
-	// UnknownState represents the Unknown replication state.
-	UnknownState State = "Unknown"
-)
-
 // VolumeReplicationSpec defines the desired state of VolumeReplication.
 type VolumeReplicationSpec struct {
 	// VolumeReplicationClass is the VolumeReplicationClass name for this VolumeReplication resource
